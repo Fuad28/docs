@@ -1,10 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "aspen",
   "name": "The Love API",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
+    "primary": "#9279BA",
+    "light": "#23103C",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
@@ -22,7 +22,7 @@
           },
           {
             "group": "  ",
-            "openapi" : "api-reference/openapi-love.json",
+            "openapi" : "/api-reference/openapi-love.json",
             "expanded": true
           }
 

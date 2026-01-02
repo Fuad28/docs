@@ -3,6 +3,10 @@
   "info": {
     "title": "Love API Endpoint",
     "description": "Welcome to the official documentation of the Love API, a beautifully engineered integration by the Lord of the worlds - the One who created love Himself",
+    "license": {
+      "name": "MIT",
+      "url": "https://love-api.com/v1"
+    },
     "version": "1.0.0"
   },
 
@@ -35,7 +39,7 @@
   "paths": {
     "/api/nikkah": {
       "post": {
-        "summary": " 💖 Merge Two Hearts 💖",
+        "summary": " 💟 Merge Two Hearts 💟",
         "description": "This endpoint allows you to initiate a halal union between two souls.",
         "operationId": "merge-in-halal",
         "requestBody": {
@@ -72,7 +76,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success - Hearts United in Halal Bond 💙",
+            "description": "Success - Hearts United in Halal Bond 💖",
             "content": {
               "application/json": {
                 "schema": {
@@ -80,7 +84,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "You're invited!"
+                      "example": "You're invited. Don't forget to pray for us 🤗"
                     }
                   }
                 }
