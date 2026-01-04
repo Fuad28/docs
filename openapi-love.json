@@ -1,5 +1,5 @@
 {
-  "openapi": "3.1.0",
+  "openapi": "3.0.0",
   "info": {
     "title": "Love API Endpoint",
     "description": "Welcome to the official documentation of the Love API, a beautifully engineered integration by the Lord of the worlds - the One who created love Himself",
@@ -9,6 +9,7 @@
     },
     "version": "1.0.0"
   },
+
   "servers": [
     { 
       "url": "https://love-api.com/v1",
@@ -21,72 +22,69 @@
       "description": "Operations related to matters of the heart"
     }
   ],
+  "components": {
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    }
+  },
   "security": [
     {
-      "bearerAuth": []
+      "basicAuth": []
     }
   ],
   
   "paths": {
     "/api/nikkah": {
-      "get": {
+      "post": {
         "summary": " 💟 Merge Two Hearts 💟",
         "description": "This endpoint allows you to initiate a halal union between two souls.",
         "operationId": "merge-in-halal",
-        "parameters": [
-          {
-            "name": "This API Operation",
-            "in": "query",
-            "description": "A Nikkah is about to happen",
-            "schema": {
-              "type": "string",
-              "example": "Nikkah💖"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Nikkah Operation Successful. Two souls are about to be merged",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "bride": {
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "bride": {
                     "description": "A miss hijabee",
                     "type": "string",
                     "example": "Maryam"
-                    },
-                    "groom": {
+                  },
+                  "groom": {
                     "type": "string",
                     "description": "An 'abd of Allah",
                     "example": "Fuad"
-                    },
-                    "date": {
+                  },
+                  "date": {
                     "type": "string",
                     "description": "The blessed date of union",
                     "example": "24-01-2026"
-                    },
+                  },
                   "venue": {
                     "type": "string",
                     "description": "The location of the union",
                     "example": "Gilbert Event Center, Ilesha, Osun state"
-                    }
                   }
                 }
               }
             }
-          },
-          "400": {
-            "description": "Error. It's fine if you can't attend the event, kindly keep us in your dua'",
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success - Hearts United in Halal Bond 💖",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "status": {
+                    "message": {
                       "type": "string",
-                      "example": "Have questions? Call the RSVPs on the nikkah flyer"
+                      "example": "You're invited. Don't forget to pray for us 🤗"
                     }
                   }
                 }
@@ -94,15 +92,7 @@
             }
           }
         }
-      }
-    }
-  },
-  "components": {
-    "securitySchemes": {
-      "bearerAuth": {
-        "type": "http",
-        "scheme": "bearer"
-      }
-    }
+  }
+} 
   }
 }

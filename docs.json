@@ -17,7 +17,13 @@
             "group": "Love Pages",
             "pages": [
               "index",
-              "introduction"
+              "explanation"
+            ]
+          },
+           {
+            "group": "Technical Love Pages",
+            "pages": [
+              "documentation"
             ]
           },
           {
