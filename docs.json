@@ -3,8 +3,8 @@
   "theme": "aspen",
   "name": "The Love API",
   "colors": {
-    "primary": "#352b46",
-    "light": "#23103C",
+    "primary": "#9279ba",
+    "light": "#9279ba",
     "dark": "#9279ba"
   },
   "favicon": "/favicon.svg",
